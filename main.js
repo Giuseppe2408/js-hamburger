@@ -1,11 +1,21 @@
 
-    const div = document.querySelector("div.header-right");
-    let ul= document.querySelector('ul')
-    let li= document.querySelector('li')
-    div.addEventListener('click',
-        function() {
-            ul.style.display = "block"
-            li.style.float = "none"
-            li.style.display = "block"
+    let barra = document.querySelector(".fa-bars");
+    let hamburger = document.querySelector(".hamburger-menu");
+    let times = document.querySelector(".fa-times")
+
+    barra.addEventListener ('click',
+
+        function () {
+            hamburger.style.display = 'block';
         }
-    );
+
+    )
+
+    times.addEventListener ('click',
+    
+        function () {
+           hamburger.style.display = 'none';
+        }
+        
+    
+    )
